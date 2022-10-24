@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Silkscreen&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+}
+
+section.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    min-height: 100vh;
+    padding: clamp(35px, 8%, 70px);
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logoRiot {
+    width: 130px;
+    margin-bottom: 80px;
+}
+
+.title {
+    color: #343434;
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.loginLabel {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.input {
+    width: 100%;
+    background-color: #ECECEC;
+    border: 2px solid rgba(0,0,0,0);
+    border-radius: 5px;
+    outline: none;
+    font-size: 0.9rem;
+    padding: 25px 10px 10px;
+    font-weight: 600;
+    color: #343434;
+}
+
+.input:focus {
+   background-color: #F9F9F9;
+   border: 2px solid #343434;
+}
+
+.loginLabel span {
+    position: absolute;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #A7A7A7;
+    margin: 20px;
+    cursor: text;
+    transition: all 300ms ease;
+}
+
+.loginLabel .spanActive {
+    font-size: 0.6em;
+    margin: 8px 10px;
+}
+
+.icons {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.icons img {
+    width: 20px;
+}
+
+.socialIcons {
+    width: 33.33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.icons .socialIcons:nth-child(1) {
+    background-color: #1B77F3;
+}
+.icons .socialIcons:nth-child(2) {
+    background-color: #ECECEC;
+}
+.icons .socialIcons:nth-child(3) {
+    background-color: #000000;
+}
+
+.loginLabelCheckBox {
+    width: 100%;
+    margin: 15px 0 50px;
+    font-size: 0.9em;
+    font-weight: 550;
+    display: flex;
+    align-items: center;
+}
+
+.checkButton {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: #ECECEC;
+    margin-right: 8px;
+    border-radius: 3px;
+
+}
+.checkButton:checked {
+    background-color: #ff0000;
+}
+
+.checkButton:checked::after {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 10px;
+    border: 3px solid #ffffff;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+    margin: 2px 6px;
+}
+
+.loginButton {
+    width: 60px;
+    height: 60px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ff0000;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 60px;
+}
+
+.loginButton svg {
+    fill: #ffffff;
+}
+
+.loginButton:disabled {
+    cursor: auto;
+    background-color: #ffffff;
+    border: 2px solid #ECECEC;
+}
+
+.loginButton:disabled svg{
+    fill: #C4C4C4;
+}
+
+.link {
+    text-transform: uppercase;
+    font-size: 0.8em;
+    text-decoration: none;
+    color: #A7A7A7;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.wallpaperLog {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    flex: 1;
+    position: fixed;
+}
+
+
